@@ -1,0 +1,12 @@
+# Arquivos compilados
+*.exe
+*.o
+*.obj
+*.out
+
+# Pastas de build
+build/
+bin/
+
+# ROMs (não comite ROMs)
+*.gb
