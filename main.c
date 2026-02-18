@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdint.h>
+
 #include "rom.h"
 #include "mmu.h"
 
 int main(int argc, char *argv[]) {
-
     if (argc < 2) {
         printf("Uso: gbemu [arquivo ROM]\n");
         return 1;
@@ -17,16 +17,16 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    // Inicializa MMU com a ROM e faz um teste simples
     MMU mmu;
     mmu_init(&mmu, &rom);
-   printf("mmu criado");
 
-    uint8_t b = mmu_read8(&mmu, 0x0134);
+    uint8_t b = mmu_read8(&mmu, 0x0134); // início do título no header
     printf("Primeiro byte do titulo (via mmu): 0x%02X\n", b);
 
-
+    // Imprime informações do header da ROM
     rom_print_header(&rom);
-    rom_free(&rom);
 
+    rom_free(&rom);
     return 0;
 }
