@@ -28,13 +28,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="718a00cc-40b8-47d8-9811-563eff0bd699" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/cpu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmu.c" beforeDir="false" afterPath="$PROJECT_DIR$/mmu.c" afterDir="false" />
-    </list>
+    <list default="true" id="718a00cc-40b8-47d8-9811-563eff0bd699" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +96,7 @@
       <workItem from="1771444320941" duration="592000" />
       <workItem from="1771465024823" duration="427000" />
       <workItem from="1771597871728" duration="1304000" />
-      <workItem from="1771628128079" duration="7033000" />
+      <workItem from="1771628128079" duration="7839000" />
     </task>
     <servers />
   </component>
