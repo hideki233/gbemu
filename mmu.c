@@ -6,8 +6,7 @@
 
 void mmu_init(MMU *mmu, const Rom *rom) {
         memset(mmu->memory, 0, sizeof(mmu->memory));
-        size_t copiar = rom->size;
-        copiar < 0x8000 ? copiar = 0x8000 : 0;
+        size_t copiar = (rom->size > 0x8000) ? 0x8000 : rom->size;
         memcpy(&mmu->memory[0x0000], rom->data, copiar);
 }
 

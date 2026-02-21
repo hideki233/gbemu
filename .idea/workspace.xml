@@ -5,6 +5,8 @@
   </component>
   <component name="BackendCodeEditorMiscSettings">
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -16,7 +18,9 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="gbemu" targetName="gbemu" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -25,11 +29,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="718a00cc-40b8-47d8-9811-563eff0bd699" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/c_cpp_properties.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/cpu.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpu.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mmu.c" beforeDir="false" afterPath="$PROJECT_DIR$/mmu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmu.h" beforeDir="false" afterPath="$PROJECT_DIR$/mmu.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +60,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="39rBTQNC5piGyONPIkmD3RXw2MV" />
-  <component name="ProjectStatusUIService"><![CDATA[{
-  "uiKindId": "Widget"
-}]]></component>
+  <component name="ProjectStatusUIService">{
+  &quot;uiKindId&quot;: &quot;Widget&quot;
+}</component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -81,6 +85,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="gbemu" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gbemu" TARGET_NAME="gbemu" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="gbemu" RUN_TARGET_NAME="gbemu">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="718a00cc-40b8-47d8-9811-563eff0bd699" name="Changes" comment="" />
@@ -89,10 +100,18 @@
       <option name="presentableId" value="Default" />
       <updated>1771444318892</updated>
       <workItem from="1771444320941" duration="592000" />
+      <workItem from="1771465024823" duration="427000" />
+      <workItem from="1771597871728" duration="1304000" />
+      <workItem from="1771628128079" duration="7033000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
 </project>
