@@ -31,6 +31,9 @@
     <list default="true" id="718a00cc-40b8-47d8-9811-563eff0bd699" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/cpu.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mmu.c" beforeDir="false" afterPath="$PROJECT_DIR$/mmu.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +109,10 @@
       <workItem from="1771597871728" duration="1304000" />
       <workItem from="1771628128079" duration="7839000" />
       <workItem from="1771723742621" duration="444000" />
-      <workItem from="1771773950225" duration="5577000" />
+      <workItem from="1771773950225" duration="5855000" />
+      <workItem from="1772825507195" duration="976000" />
+      <workItem from="1772992500242" duration="1152000" />
+      <workItem from="1773009043053" duration="3704000" />
     </task>
     <servers />
   </component>

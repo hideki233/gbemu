@@ -10,6 +10,7 @@ typedef struct {
 
     uint8_t A;
     uint8_t F;
+    uint8_t ime;
 
     uint8_t B;
     uint8_t C;

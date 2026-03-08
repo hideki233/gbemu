@@ -11,6 +11,10 @@ void mmu_init(MMU *mmu, const Rom *rom) {
 }
 
 uint8_t mmu_read8(MMU *mmu, uint16_t addr) {
+
+        if (addr == 0xFF44) {
+                return 0x91;
+        }
         return mmu->memory[addr];
 }
 

@@ -23,18 +23,27 @@ int main(int argc, char *argv[]) {
     mmu_init(&mmu, &rom);
    printf("mmu criado\n");
 
+
     uint8_t b = mmu_read8(&mmu, 0x0134); // início do título no header
     printf("Primeiro byte do titulo (via mmu): 0x%02X\n", b);
 
     CPU cpu;
     cpu_init(&cpu, &mmu);
 
-    for (int i= 0; i < 50; i++) {
+    for (int i= 0; i < 500000; i++) {
         int cycles = cpu_step(&cpu);
         if (cycles == 0) break;
     }
 
+    for (int i = 0; i < 500; i++) {
+        int cycles = cpu_step(&cpu);
+        if (cycles == 0) {
+            printf("Parou na instrucao %d, PC=0x%04X\n", i, cpu.PC);
+            break;
+        }
+    }
 
+    printf("CPU terminou em PC=0x%04X, A=0x%02X, F=0x%02X\n", cpu.PC, cpu.A, cpu.F);
     // Imprime informações do header da ROM
     rom_print_header(&rom);
 
