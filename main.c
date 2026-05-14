@@ -7,6 +7,9 @@
 
 #define WIDTH 900
 #define HEIGHT 600
+#define GB_WIDTH 160
+#define GB_HEIGHT 144
+#define CYCLES_PER_FRAME 70224
 
 int main(int argc, char *argv[]) {
 
@@ -50,13 +53,10 @@ int main(int argc, char *argv[]) {
     SDL_Window *window = SDL_CreateWindow(GAME,SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT,  0);
 
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, 0);
+    SDL_RenderSetLogicalSize(renderer, GB_WIDTH, GB_HEIGHT);
 
     int running = 1;
     SDL_Event event;
-
-for (int i = 0; i < 1000000; i++) {
-    cpu_step(&cpu);
-}
 
 while (running) {
     while (SDL_PollEvent(&event)) {
@@ -71,6 +71,11 @@ while (running) {
        //         break;
        //     }
        //     }
+
+    int frame_cycles = 0;
+    while (frame_cycles < CYCLES_PER_FRAME) {
+        frame_cycles += cpu_step(&cpu);
+    }
 
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     SDL_RenderClear(renderer);
@@ -100,10 +105,6 @@ while (running) {
 
             int tile_x = bx * 8;
             int tile_y = by * 8;
-            if (by == 0 && bx < 10) {
-                printf("%02X ", tile_index);
-            }
-
             for (int y = 0; y < 8; y++) {
 
                 uint8_t byte1 = mmu_read8(&mmu, tile_addr + y * 2);
@@ -122,16 +123,11 @@ while (running) {
                         case 3: SDL_SetRenderDrawColor(renderer, 0,0,0,255); break;
                     }
 
-                    SDL_RenderDrawPoint(
-                        renderer,
-                        tile_x + x,
-                        tile_y + y
-                    );
+                    SDL_RenderDrawPoint(renderer, tile_x + x, tile_y + y);
                 }
             }
         }
     }
-
 
     SDL_RenderPresent(renderer);
 }
